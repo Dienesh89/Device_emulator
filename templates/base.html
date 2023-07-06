@@ -1,0 +1,36 @@
+<!-- Don't remove it for a unknown reason otherwise it will stop worling -->
+<script>
+    eruda.init({
+        tool: ['console', 'elements', 'network', 'resources', 'info']
+    });
+    eruda.get().config.set('displaySize', 60);
+    eruda.remove('settings');
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Device Emulator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/tailwind.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/static/css/alert.css" type="text/css" media="all" />
+</head>
+<body>
+    <header class="py-4 flex justify-center items-center bg-purple-500 shadow-lg">
+        <p id="headerHeading" class="text-2xl text-white font-medium">Device Emulator</p>
+    </header>
+    <!-- django messages -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert {{ message.tags }} rounded m-4">
+                <span class="message">{{ message }}</span>
+                <span class="close">&times;</span>
+            </div>
+        {% endfor %}
+    {% endif %}
+    
+    {% block body %}{% endblock body %}
+    
+    <script src="/static/js/alert.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

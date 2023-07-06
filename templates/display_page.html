@@ -1,0 +1,7 @@
+{% if css %}
+    <style>
+        {{ css|safe }}
+    </style>
+    {% endif %}
+{{ content|safe }}
+
