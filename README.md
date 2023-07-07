@@ -86,4 +86,4 @@ To install,follow these steps respectively:
 **For Desktop:** Run all these given commands in command prompt.
 
 # Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please submit a pull request or open an issue in the GitHub repository.# Device_emulator
+Contributions are welcome! If you find any issues or have suggestions for improvements, please submit a pull request or open an issue in the GitHub repository.
