@@ -1,0 +1,146 @@
+<!-- Don't remove it for a unknown reason otherwise it will stop worling -->
+<script>
+    eruda.init({
+        tool: ['console', 'elements', 'network', 'resources', 'info']
+    });
+    eruda.get().config.set('displaySize', 60);
+    eruda.remove('settings');
+</script>
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 127.0.0.1:8000/emulate/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 07 Jul 2023 09:18:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <title>Device Emulator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/tailwind.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="../static/css/alert.css" type="text/css" media="all" />
+</head>
+<body>
+    <header class="py-4 flex justify-center items-center bg-purple-500 shadow-lg">
+        <p id="headerHeading" class="text-2xl text-white font-medium">Device Emulator</p>
+    </header>
+    
+    
+<!-- icons -->
+<div class="flex m-auto border-purple-500 border-2 w-max my-4 relative">
+    <div onclick="changeWidth(1536)" class="border-purple-500 border-r-2 p-2 devices cursor-pointer transition-colors">
+        <img src="../static/icons/desktop.svg" alt="Desktop" class="w-10 h-10"/>
+    </div>
+    <div onclick="changeWidth(1280)" class="border-purple-500 border-r-2 p-2 devices cursor-pointer transition-colors">
+        <img src="../static/icons/laptop.svg" alt="Laptop" class="w-10 h-10"/>
+    </div>
+    <div onclick="changeWidth(768)" class="border-purple-500 border-r-2 p-2 devices cursor-pointer transition-colors">
+        <img src="../static/icons/tablet.svg" alt="Tablet" class="w-10 h-10"/>
+    </div>
+    <div onclick="changeWidth(400)" class="border-purple-500 border-r-2 p-2 devices cursor-pointer transition-colors">
+        <img src="../static/icons/mobile.svg" alt="Mobile" class="w-10 h-10"/>
+    </div>
+    <div class="p-2 devices cursor-pointer transition-colors bg-purple-500" id="dropdown-chevron">
+        <img src="../static/icons/down_chevron_white.svg" alt="responsive" class="w-10 h-10"/>
+        <!-- Add a drop-down menu here -->
+        <div style="height:370px;overflow:scroll;" class="dropdown-menu hidden absolute z-10 right-0 mt-2 w-max bg-white rounded-md shadow-lg transition-colors">
+            <div onclick="changeWidth(360)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/mobile.svg" alt="Moto G4" class="w-5 h-5 inline-block mr-2"/>
+                Moto G4
+            </div>
+            <div onclick="changeWidth(480)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/mobile.svg" alt="Galaxy Note 5" class="w-5 h-5 inline-block mr-2"/>
+                Galaxy Note 5
+            </div>
+            <div onclick="changeWidth(411)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/mobile.svg" alt="Pixel 2" class="w-5 h-5 inline-block mr-2"/>
+                Pixel 2
+            </div>
+            <div onclick="changeWidth(411)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/mobile.svg" alt="Pixel 2 XL" class="w-5 h-5 inline-block mr-2"/>
+                Pixel 2 XL
+            </div>
+            <div onclick="changeWidth(320)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/mobile.svg" alt="Iphone 5" class="w-5 h-5 inline-block mr-2"/>
+                Iphone 5
+            </div>
+            <div onclick="changeWidth(375)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/mobile.svg" alt="Iphone 6/7/8" class="w-5 h-5 inline-block mr-2"/>
+                Iphone 6/7/8
+            </div>
+            <div onclick="changeWidth(411)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/mobile.svg" alt="Iphone 6/7/8 plus" class="w-5 h-5 inline-block mr-2"/>
+                Iphone 6/7/8 plus
+            </div>
+            <div onclick="changeWidth(375)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/mobile.svg" alt="Iphone X" class="w-5 h-5 inline-block mr-2"/>
+                Iphone X
+            </div>
+            <div onclick="changeWidth(768)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/tablet.svg" alt="Ipad" class="w-5 h-5 inline-block mr-2"/>
+                Ipad
+            </div>
+            <div onclick="changeWidth(1024)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/laptop.svg" alt="Ipad pro" class="w-5 h-5 inline-block mr-2"/>
+                Ipad pro
+            </div>
+            <div onclick="changeWidth(600)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/laptop.svg" alt="Nexus 7" class="w-5 h-5 inline-block mr-2"/>
+                Nexus 7
+            </div>
+            <div onclick="changeWidth(800)" class="px-4 py-2 text-gray-800 hover:bg-gray-200">
+                <img src="../static/icons/laptop.svg" alt="Nexus 10" class="w-5 h-5 inline-block mr-2"/>
+                Nexus 10
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="iframe-container">
+    <iframe id="iframe" src="https://dienesh89.github.io/tailwind-websites/Itailian restaurant/index.html"></iframe>
+</div>
+
+<!-- loading animation -->
+<div class="flex justify-center" id="loading-animation">
+<button type="submit" class="bg-purple-500 rounded py-2 px-4 text-white mt-4 cursor-pointer flex justify-between items-center">
+    <p class="mr-2 text-xl text-bold font-medium">Loading...</p>
+    <img src="../static/icons/gear.svg" class="rotate"/>
+</button>
+</div>
+
+<div class="m-auto w-[90%] my-2">
+    <!-- width -->
+    <p class="text-xl">Width:</p>
+    <div class="flex justify-between items-center">
+        <input type="range" id="slider" min="300" max="2056" value="50">
+        <span class="text-lg ml-2"></span>
+    </div>
+</div>
+
+
+<script src="../static/js/eruda.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/script.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/js/buttons.js" type="text/javascript" charset="utf-8"></script>
+<script>
+// dropdownMenu
+var dropdownChevron = document.getElementById('dropdown-chevron');
+var dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownChevron.addEventListener('click', function(e) {
+    e.preventDefault();
+    dropdownMenu.classList.toggle("hidden");
+});
+
+// animation
+let animation = document.getElementById("loading-animation")
+iframe.addEventListener("load",(e)=>{
+    e.preventDefault();
+    animation.style.display = "none"
+})
+
+</script>
+
+    
+    <script src="../static/js/alert.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+<!-- Mirrored from 127.0.0.1:8000/emulate/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 07 Jul 2023 09:18:37 GMT -->
+</html>
