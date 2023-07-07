@@ -2,7 +2,7 @@
 
 ## Description
 
-Device Emulator is a Django web application that allows you to emulate different devices and view webpages on them. It provides a user-friendly interface for selecting devices and rendering webpages, making it easy to test the ```responsiveness``` and layout of websites.Here is a [Demo](https://demo.mo).
+Device Emulator is a Django web application that allows you to emulate different devices and view webpages on them. It provides a user-friendly interface for selecting devices and rendering webpages, making it easy to test the ```responsiveness``` and layout of websites.Here is a [Demo](https://dienesh89.github.io/Device_emulator/).
 
 ## Purpose
 
@@ -41,10 +41,12 @@ iframe.style.width = `${w}px`
 adjustScale() // after calling this function you can see your page in the width of 1024px
 ```        
 ## Installation
-You have to install it to use it beacuse any free django hosting service is not available.
+You have to install it to use beacuse any ```free``` django hosting service is ```not available```.
 ### For Android
+To install,follow these steps respectively:
+
 - [Setup Termux app](https://www.geeksforgeeks.org/how-to-install-termux-on-android/amp/)
-Run these commands respectively:
+
 - Run command:
 ```shell
    apt update && apt upgrade
@@ -74,11 +76,12 @@ Run these commands respectively:
    python manage.py runserver
 ```
 - Now,go to the ```http://127.0.0.1:8000``` in your browser
-![page1](http://127.0.0.1:8000/static/readme_images/page1.jpg)
+  
+![page1](https://dienesh89.github.io/Device_emulator/readme_images/page1.jpg)
 
-![page2](http://127.0.0.1:8000/static/readme_images/page2.jpg)  
+![page2](https://dienesh89.github.io/Device_emulator/readme_images/page2.jpg)  
 
-![page3](http://127.0.0.1:8000/static/readme_images/page3.jpg)  
+![page3](https://dienesh89.github.io/Device_emulator/readme_images/page3.jpg)  
 
 **For Desktop:** Run all these given commands in command prompt.
 
