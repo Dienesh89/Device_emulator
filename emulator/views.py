@@ -89,8 +89,8 @@ def emulate(request):
             messages.error(request,"Invalid Url,Please try different url.")
             return render(request,"index.html")
     else:
-        # HttpResponse("404 - not - found")
-        return render(request,"emulate.html",{"url":"https://google.com?igu=1"})
+        HttpResponse("404 - not - found")
+        # return render(request,"emulate.html",{"url":"https://google.com?igu=1"})
     
 # takes url and displays page (Not same as Original page)
 @xframe_options_sameorigin
