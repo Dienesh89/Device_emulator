@@ -2,7 +2,7 @@
 
 ## Description
 
-Device Emulator is a Django web application that allows you to emulate different devices and view webpages on them. It provides a user-friendly interface for selecting devices and rendering webpages, making it easy to test the ```responsiveness``` and layout of websites.Here is a [Demo](https://dienesh89.github.io/Device_emulator/emulate/index.html) and [Demo 2](https://dienesh89.github.io/Device_emulator/emulate/index2.html).
+Device Emulator is a Django web application that allows you to emulate different devices and view webpages on them. It provides a user-friendly interface for selecting devices and rendering webpages, making it easy to test the ```responsiveness``` and layout of websites.Here is the [Demo](https://dienesh89.github.io/Device_emulator/emulate/index.html) and [Demo 2](https://dienesh89.github.io/Device_emulator/emulate/index2.html).
 
 ## Purpose
 
